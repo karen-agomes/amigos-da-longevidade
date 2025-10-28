@@ -23,15 +23,15 @@ As páginas estão conectadas por links de navegação e utilizam elementos sem�
 
 ## 🖼️ Recursos e Organização
 **Pastas do projeto:**
-AmigosDaLongevidade/
-│
-├── index.html
-├── projetos.html
-├── cadastro.html
-├── css/
-│ └── style.css
-└── imagens/
-└── idosos-sorrindo.jpg
+- AmigosDaLongevidade/
+- │
+- ├── index.html
+- ├── projetos.html
+- ├── cadastro.html
+- ├── css/
+- │ └── style.css
+- └── imagens/
+- └── idosos-sorrindo.jpg
 
 ---
 
