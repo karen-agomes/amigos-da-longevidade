@@ -4,18 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amigos da Longevidade - Cadastro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+<script>
+const menuToggle = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
+
+menuToggle.addEventListener('click', () => {
+  navList.classList.toggle('active');
+});
+</script>
 <body>
   <header>
     <h1>Cadastro de Voluntário</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-      </ul>
-    </nav>
+  <div class="menu-container">
+    <div class="logo">Amigos da Longevidade</div>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    <ul class="nav-list">
+      <li><a href="index.html">Início</a></li>
+      <li class="dropdown">
+        <a href="#">Projetos &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="projetos.html">Projetos Sociais</a></li>
+          <li><a href="#">Oportunidades de Voluntariado</a></li>
+        </ul>
+      </li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+    </ul>
+  </div>
+</nav>
   </header>
 
   <main>

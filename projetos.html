@@ -3,39 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amigos da Longevidade - Projetos</title>
+  <title>Projetos - Amigos da Longevidade</title>
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Projetos da ONG</h1>
-    <nav>
-      <ul>
+
+  <!-- Menu -->
+  <nav>
+    <div class="menu-container">
+      <div class="logo">Amigos da Longevidade</div>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <ul class="nav-list">
         <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
+        <li class="dropdown">
+          <a href="#">Projetos &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="projetos.html">Projetos Sociais</a></li>
+            <li><a href="#">Oportunidades de Voluntariado</a></li>
+          </ul>
+        </li>
         <li><a href="cadastro.html">Cadastro</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
+  <!-- Conteúdo principal -->
   <main>
+    <!-- Projetos Sociais -->
     <section>
-      <h2>Oportunidades de Voluntariado</h2>
-      <p>Conheça os projetos disponíveis e saiba como participar como voluntário ou apoiador.</p>
+      <h2>Projetos Sociais</h2>
+      <p>
+        Na Amigos da Longevidade, desenvolvemos projetos que promovem um envelhecimento saudável e ativo. 
+        Nossos principais focos são:
+      </p>
+      <ul>
+        <li>Programas de atividade física adaptada para idosos;</li>
+        <li>Oficinas de alimentação saudável e nutrição;</li>
+        <li>Eventos culturais e sociais para integração;</li>
+        <li>Workshops de habilidades digitais e tecnológicas;</li>
+        <li>Campanhas de conscientização sobre saúde mental e bem-estar.</li>
+      </ul>
     </section>
 
+    <!-- Oportunidades de Voluntariado -->
     <section>
-      <h2>Projetos em Andamento</h2>
+      <h2>Oportunidades de Voluntariado</h2>
+      <p>
+        Oferecemos diversas maneiras de se engajar como voluntário e contribuir para a qualidade de vida dos idosos:
+      </p>
       <ul>
-        <li>Atividades físicas semanais para idosos</li>
-        <li>Oficinas de arte e memória</li>
-        <li>Campanhas de saúde e prevenção</li>
+        <li>Acompanhar idosos em atividades físicas e recreativas;</li>
+        <li>Auxiliar em oficinas de artes, música e teatro;</li>
+        <li>Dar suporte em eventos e campanhas comunitárias;</li>
+        <li>Participar de programas de orientação digital e tecnológica;</li>
+        <li>Colaborar em iniciativas de saúde, nutrição e bem-estar.</li>
       </ul>
     </section>
   </main>
 
+  <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Amigos da Longevidade</p>
+    <p>© 2025 Amigos da Longevidade. Todos os direitos reservados.</p>
   </footer>
+
+  <!-- Script menu mobile -->
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+
+    menuToggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+
 </body>
 </html>
