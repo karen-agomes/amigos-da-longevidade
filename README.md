@@ -1,7 +1,7 @@
 # Amigos da Longevidade
 
 **Amigos da Longevidade** é uma ONG fictícia voltada à promoção do envelhecimento saudável e ativo.  
-Este projeto foi desenvolvido como parte da **Entrega I** da disciplina **Desenvolvimento Front-end para Web**, do curso de **Análise e Desenvolvimento de Sistemas**.
+Este projeto foi desenvolvido como parte das **Entrega I, II, III e IV** da disciplina **Desenvolvimento Front-end para Web**, do curso de **Análise e Desenvolvimento de Sistemas**.
 
 ---
 
