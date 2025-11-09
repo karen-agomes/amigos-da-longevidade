@@ -37,6 +37,20 @@ menuToggle.addEventListener('click', () => {
     </ul>
   </div>
 </nav>
+
+  <!-- Botão de modo escuro -->
+<button id="modo-escuro-toggle">Ativar modo escuro</button>
+
+<script>
+  const toggleBtn = document.getElementById('modo-escuro-toggle');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('modo-escuro');
+    toggleBtn.textContent = document.body.classList.contains('modo-escuro')
+      ? 'Desativar modo escuro'
+      : 'Ativar modo escuro';
+  });
+</script>
+
   </header>
 
   <!-- Conteúdo principal -->
@@ -68,5 +82,6 @@ menuToggle.addEventListener('click', () => {
   <footer>
     <p>&copy; 2025 Amigos da Longevidade - Todos os direitos reservados</p>
   </footer>
+
 </body>
 </html>

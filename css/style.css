@@ -283,3 +283,103 @@ img {
   color: #b71c1c;
   border: 1px solid #b71c1c;
 }
+
+/* ============================
+   🔹 ACESSIBILIDADE E MODO ESCURO
+============================ */
+
+/* Botão de modo escuro */
+#modo-escuro-toggle {
+  background-color: #fff;
+  color: #1b5e20;
+  border: 2px solid #1b5e20;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  margin: 10px auto;
+  transition: all 0.3s ease;
+}
+
+#modo-escuro-toggle:hover,
+#modo-escuro-toggle:focus {
+  background-color: #1b5e20;
+  color: #fff;
+}
+
+/* Estado do modo escuro */
+body.modo-escuro {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.modo-escuro header,
+body.modo-escuro nav,
+body.modo-escuro footer {
+  background-color: #1b5e20;
+  color: #fff;
+}
+
+body.modo-escuro a {
+  color: #81c784;
+}
+
+body.modo-escuro button {
+  background-color: #388e3c;
+  color: #fff;
+}
+
+/* Contraste mínimo garantido */
+body {
+  color: #222;
+  background-color: #fafafa;
+}
+
+/* Foco visível para navegação por teclado */
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid #388e3c;
+  outline-offset: 3px;
+}
+
+/* ===== MODO ESCURO ===== */
+body.modo-escuro {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.modo-escuro header,
+body.modo-escuro footer {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-color: #333;
+}
+
+/* Ajuste das caixinhas e seções */
+body.modo-escuro section,
+body.modo-escuro .card,
+body.modo-escuro form {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  border: 1px solid #333;
+}
+
+/* Campos de entrada e botões */
+body.modo-escuro input,
+body.modo-escuro textarea,
+body.modo-escuro select {
+  background-color: #2b2b2b;
+  color: #f5f5f5;
+  border: 1px solid #555;
+}
+
+body.modo-escuro button {
+  background-color: #2e7d32; /* verde escuro */
+  color: #ffffff;
+}
+
+body.modo-escuro a {
+  color: #80e27e; /* verde claro para contraste */
+}

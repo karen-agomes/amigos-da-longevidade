@@ -63,3 +63,33 @@ form.addEventListener("submit", function (event) {
     form.reset(); // Limpa o formulário
   }
 });
+
+// ===============================
+// MODO ESCURO
+// ===============================
+const toggleBtn = document.createElement('button');
+toggleBtn.id = 'modo-escuro-toggle';
+toggleBtn.innerText = 'Ativar modo escuro';
+document.body.prepend(toggleBtn);
+
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('modo-escuro');
+  if (document.body.classList.contains('modo-escuro')) {
+    toggleBtn.innerText = 'Desativar modo escuro';
+  } else {
+    toggleBtn.innerText = 'Ativar modo escuro';
+  }
+});
+
+// ===============================
+// ACESSIBILIDADE - NAVEGAÇÃO POR TECLADO
+// ===============================
+const links = document.querySelectorAll('a, button, input');
+links.forEach(link => {
+  link.setAttribute('tabindex', '0');
+  link.addEventListener('keypress', e => {
+    if (e.key === 'Enter') {
+      link.click();
+    }
+  });
+});
